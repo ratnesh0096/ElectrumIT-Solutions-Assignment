@@ -1,0 +1,560 @@
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 70px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  /* padding: 20px; */
+  border: 1px solid #888;
+  width: 90%;
+  height: 85%;
+  /* display: flex; */
+}
+
+.modal-header {
+  display: flex;
+  /* position: absolute; */
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 9%;
+}
+
+.modal-title {
+  margin-left: 35px;
+  font-weight: bold;
+  color: rgb(54, 97, 56);
+  /* text-decoration-line: underline; */
+}
+
+.header-hrline {
+  margin-top: -10px;
+  margin-left: 20%;
+  width: 78%;
+  height: 0px;
+}
+
+.underline {
+  margin-left: 20px;
+  margin-top: 0px;
+  width: 20%;
+  height: 0px;
+  font-weight: bold;
+  border: 1px solid rgb(54, 97, 56);
+}
+
+/*________________________*/
+
+.overview {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 10px;
+  height: 10px;
+  width: 96%;
+  height: 87%;
+  /* border: 1px solid black; */
+}
+
+.overview-data {
+  /* margin-left: 20px; */
+  /* margin-top: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+  height: 10px;
+  width: 80%;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+
+.verticle--line {
+  margin-top: 0;
+  margin-left: 0;
+  height: 100%;
+}
+
+/*___________Product Overview________________*/
+
+.productMainParent {
+  width: 47%;
+  height: auto;
+  margin-right: 20px;
+  margin-bottom: 16px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.productParent {
+  width: 100%;
+  height: 20px;
+  background: rgb(54, 97, 56);
+  /* border-radius: 3px; */
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  display: flex;
+}
+
+.product_bullet {
+  margin-top: 0px;
+  color: #fefefe;
+  font-size: 14px;
+}
+
+.product_block {
+  display: flex;
+  padding: 2px;
+  padding-top: 8px;
+  margin-top: 0px;
+  font-size: 11px;
+  color: rgb(83, 80, 80);
+}
+
+.product_image {
+  height: 20px;
+  width: 20px;
+}
+
+/*_______Right hand cost_____________*/
+
+.overviewPrice {
+  margin-top: 20px;
+  margin-left: 14px;
+  height: 100px;
+  width: 38%;
+  /* border: 1px solid black; */
+}
+
+.overviewBasePrice {
+  display: flex;
+  width: 100%;
+  height: 18px;
+  margin-bottom: 6px;
+}
+
+.overviewBasePriceText {
+  margin-top: 0;
+  font-size: 15px;
+  color: #504f46;
+}
+
+.overviewBasePriceHr {
+  width: 64%;
+  height: 0;
+  border-top: 1px dotted gray;
+}
+
+.overviewBaseInstallation {
+  margin-top: 0px;
+  font-size: 11.5px;
+  color: #818078;
+  /* border: 1px solid black; */
+  margin-bottom: 8px;
+}
+
+/***********************/
+
+.overviewCost {
+  display: flex;
+  width: 100%;
+  height: 18px;
+  margin-bottom: 8px;
+  /* border: 1px solid black; */
+}
+
+.overviewCostText {
+  margin-top: 0;
+  font-size: 15px;
+  color: #504f46;
+}
+
+.overviewCostImage {
+  width: 10px;
+  height: 10px;
+  margin: 4px;
+}
+
+.overviewCostHr {
+  width: 48%;
+  height: 0px;
+  border-top: 1px dotted gray;
+}
+
+/* _____________________________ */
+
+.overviewSaving {
+  border: 1.7px solid rgb(68, 107, 68);
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 8px;
+}
+
+.overviewSavingText {
+  font-size: 12px;
+  color: #0f0f0f;
+}
+
+.overviewSavingImage {
+  width: 10px;
+  height: 10px;
+  margin-top: 14px;
+  margin-left: 5px;
+  /* margin: 4px; */
+}
+
+.overviewSavingAm {
+  margin-left: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  color: rgb(54, 97, 56);
+}
+
+/*_________________________________*/
+
+/* The Close Button */
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  /* align-self: flex-end; */
+  position: absolute;
+  left: 92%;
+  top: 80px
+  /* align-content: flex-end; */
+}
+
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*__________________________________*/
+
+#main-frame {
+  /* height: 100vh; */
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Sans-serif';
+  background: #dfdff0;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* text-align: center; */
+}
+
+#card-holder {
+  /* border: 1px solid black; */
+  margin-top: 40px;
+  padding: 0px;
+  width: auto;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#volume {
+  top: 20px;
+  left: 40%;
+  position: absolute;
+  display: flex;
+  padding: 0px;
+}
+
+#volumeSelector {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 30px;
+  width: 50px;
+}
+
+.card {
+  margin: 1rem;
+  width: 340px;
+  height: 559px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 12px 32px 4px rgba(black, .2);
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.head {
+  background-color: #282828;
+  width: 340px;
+  height: 60px;
+  /* margin-left: 0px; */
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.headingOne {
+  line-height: 0px;
+  margin-top: 25px;
+  margin-left: 7px;
+  font-size: 17px;
+  font-weight: normal;
+  color: whitesmoke;
+}
+
+.headingTwo {
+  line-height: 0px;
+  margin-left: 7px;
+  font-size: 14px;
+  font-weight: normal;
+  color: whitesmoke;
+}
+
+.imageParent {
+  display: flex;
+  margin-top: 80px;
+  margin-left: 18px;
+}
+
+.unorderedList {
+  margin-left: 20px;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.list {
+  margin: 0;
+  margin-left: 6px;
+}
+
+.featureParent {
+  /* border: 1px solid black; */
+  /* height: 20px; */
+  width: 180px;
+  display: flex;
+  margin-bottom: 18px;
+  /* flex-wrap: wrap; */
+}
+
+.outerDot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12px;
+  width: 12px;
+  background-color: rgb(235, 176, 15);
+  border-radius: 12px;
+  align-content: center;
+}
+
+.innerDot {
+  /* margin-top: ; */
+  height: 4px;
+  width: 4px;
+  background-color: rgb(233, 233, 232);
+  /* border-radius: 6px; */
+}
+
+img {
+  width: 80px;
+  height: 220px;
+}
+
+.image--style {
+  width: 60px;
+}
+
+li:not(:first-of-type) {
+  padding-top: 0.7em;
+}
+
+li:not(:last-of-type) {
+  padding-bottom: 0.7em;
+}
+
+.line {
+  width: 93%;
+  background: #818078;
+}
+
+/* Base Price n all */
+
+.pricesParent {
+  width: 93%;
+  margin-left: 10px;
+  /* border: 1px solid black; */
+  margin-bottom: 0;
+}
+
+/*_________________*/
+
+.prices {
+  display: flex;
+  width: 100%;
+  /* border: 1px solid black; */
+  height: 22px;
+}
+
+.basePrice {
+  margin-top: 0;
+  font-size: 15px;
+  color: #504f46;
+}
+
+.priceTextLine {
+  width: 56%;
+  height: 0;
+  border-top: 1px dotted gray;
+}
+
+.installation {
+  margin-top: 0px;
+  font-size: 11.5px;
+  color: #818078;
+  /* border: 1px solid black; */
+  margin-bottom: 8px;
+}
+
+/* ________________________________ */
+
+/* Incentive Parent */
+
+.incentiveParent {
+  /* border: 1px solid black; */
+  display: flex;
+  margin-left: 10px;
+  margin-top: 0px;
+  height: 16px;
+  margin-bottom: 8px;
+}
+
+.incentiveText {
+  margin-top: 0;
+  font-size: 11.5px;
+  color: #504f46;
+}
+
+.incentiveImage {
+  width: 10px;
+  height: 10px;
+  margin: 2px;
+  margin-left: 5px;
+}
+
+.incentiveTextLine {
+  width: 50%;
+  height: 0px;
+  border-top: 1px dotted gray;
+}
+
+/* _________________________ */
+
+/* ____________Euipment Cost */
+
+.equipmentCostParent {
+  display: flex;
+  /* border: 1px solid black; */
+  height: 21px;
+  margin-bottom: 8px;
+}
+
+.equipmentCost {
+  margin-top: 0;
+  font-size: 15px;
+  color: #504f46;
+}
+
+.equipmentCostImage {
+  width: 10px;
+  height: 10px;
+  margin: 4px;
+  /* margin-left: 5px; */
+}
+
+.equipmentCostLine {
+  width: 40%;
+  height: 0px;
+  border-top: 1px dotted gray;
+}
+
+/* _____________________________ */
+
+/* Savings________________ */
+
+.savingsParent {
+  border: 1.7px solid rgb(68, 107, 68);
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 8px;
+}
+
+.savingsText {
+  /* margin-top: 0; */
+  font-size: 12px;
+  color: #0f0f0f;
+}
+
+.savingsImage {
+  width: 10px;
+  height: 10px;
+  margin-top: 14px;
+  margin-left: 5px;
+  /* margin: 4px; */
+}
+
+.savingsCost {
+  font-weight: bold;
+  font-size: 12px;
+  color: green;
+}
+
+/* __________________________ */
+
+.button--style {
+  background-color: #F9A602;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  width: 60%;
+  height: 50px;
+  border-radius: 5px;
+  margin-left: 18%;
+  margin-bottom: 8px;
+}
+
+.card--footer {
+  width: 100%;
+  cursor: pointer;
+  height: 30px;
+  font-size: 15px;
+  background: #ecf0f1;
+  color: rgb(103, 45, 240);
+  text-align: center;
+  padding-top: 6px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
