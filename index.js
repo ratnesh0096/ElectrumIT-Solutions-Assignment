@@ -1,8 +1,10 @@
 let data;
+// Storing data to lacal storage.
 if (localStorage.getItem("data") !== null) {
   data = JSON.parse(localStorage.getItem("data"));
 } else {
   async function fetchData(url) {
+    //Fetching data if it's not teher on LS
     try {
       const response = await fetch(
         "https://6051b8b8fb49dc00175b6997.mockapi.io/api/quotes",
@@ -23,6 +25,7 @@ const selectedVolume = document.getElementById("volumeSelector");
 selectedVolume.addEventListener("click", (e) => {
   const body = document.getElementById("main-frame");
 
+  //Filtering the required data as per selected value
   const filteredData = tempData.filter(
     (product) => product.volume === parseInt(e.target.value)
   );
@@ -32,6 +35,7 @@ selectedVolume.addEventListener("click", (e) => {
     console.log("Product is not available");
     cardHolder.innerHTML = "<h1>Oops! No Product Available</h1>";
   } else {
+    //Deleting previous nodes from the DOM to avoid repeatation.
     const deleteCardHolder = document.getElementById("card-holder");
     if (deleteCardHolder.hasChildNodes()) {
       body.removeChild(deleteCardHolder);
